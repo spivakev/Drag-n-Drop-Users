@@ -23,7 +23,7 @@ export function* getUsersWorker() {
 
 async function getUsers() {
   const response = await axios.get(
-    "https://randomuser.me/api/?results=3000&nat=us,dk,fr,gb"
+    "https://randomuser.me/api/?results=3000&nat=us,de,fr,gb"
   );
   return await response.data;
 }
